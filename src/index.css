@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loaderInfi{
+    @apply h-28 w-28;
+}
