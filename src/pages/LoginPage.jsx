@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import {useEffect, useState} from 'react'
 import { useAuth } from '../utils/AuthContext'
 import { useNavigate } from 'react-router'
 import { Link } from 'react-router-dom'
@@ -15,7 +15,7 @@ const LoginPage = () => {
         if (user){
             navigate('/')
         }
-    }, [])
+    }, [navigate, user])
 
     const handleInputChange = (e) => {
       let name = e.target.name

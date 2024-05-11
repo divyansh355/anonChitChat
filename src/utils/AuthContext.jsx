@@ -60,7 +60,7 @@ export const AuthProvider = ({ children }) => {
         credentials.password1,
         credentials.name
       );
-      console.log("User registered!", response);
+      alert("User registered!", response);
 
       await account.createEmailSession(
         credentials.email,
