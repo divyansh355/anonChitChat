@@ -85,7 +85,7 @@ const Room = () => {
      } 
 
   return (
-    <main className="container">
+    <main className="m-2 overflow-auto scroll-smooth">
       <Header />
       <div className="flex flex-col justify-center items-center">
         <form id="message--form" onSubmit={handleSubmit}>
